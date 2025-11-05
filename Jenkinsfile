@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-               
+                git branch: 'main', url: '<GITURL>', credentialsId: '<PATTOCKEN>'
             }
         }
         stage('Build Docker Image') {
