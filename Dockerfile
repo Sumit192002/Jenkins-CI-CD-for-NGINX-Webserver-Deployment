@@ -1,5 +1,5 @@
 # Use the official Nginx image as the base image
-FROM nginx:stable-alpine
+FROM nginx:trixie
 
 # Copy the custom index.html to the Nginx default HTML directory
 COPY index.html /usr/share/nginx/html/
