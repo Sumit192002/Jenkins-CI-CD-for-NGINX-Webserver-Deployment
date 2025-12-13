@@ -8,14 +8,14 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/Sumit192002/Jenkins-CI-CD-for-NGINX-Webserver-Deployment.git', credentialsId: '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'
+                git branch: 'main', url: 'https://github.com/Sumit192002/Jenkins-CI-CD-for-NGINX-Webserver-Deployment.git', credentialsId: 'Ngnix'
             }
         }
         stage('Build Docker Image') {
             steps {
                 script {
                     // Build the Docker image using Buildx
-                    sh 'docker buildx build --tag my-nginx-image .'
+                    sh 'docker build -t my-nginx-image .'
                 }
             }
         }
