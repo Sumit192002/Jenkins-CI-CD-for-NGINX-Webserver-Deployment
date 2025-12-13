@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/Sumit192002/Jenkins-CI-CD-for-NGINX-Webserver-Deployment.git', credentialsId: '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'
+                git branch: 'main', url: 'https://github.com/Sumit192002/Jenkins-CI-CD-for-NGINX-Webserver-Deployment.git', credentialsId: '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'
             }
         }
         stage('Build Docker Image') {
