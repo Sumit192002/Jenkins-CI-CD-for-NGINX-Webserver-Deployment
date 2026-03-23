@@ -44,7 +44,7 @@ Developer Push Code → GitHub Repository
 
 ---
 
-# Technologies Used
+# Tech Stack
 
 * Jenkins
 * Docker
